@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch X2 - UrbanTech Wear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Urban<span>Tech</span></a>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="detail.html" class="active">Details</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="confirmation.html">Confirmation</a></li>
+            </ul>
+            <div class="nav-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <a href="products.html">Products</a> <i class="fas fa-chevron-right"></i>
+            <span>Smart Watch X2</span>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="detail-grid">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80" alt="Smart Watch X2" id="mainProductImage">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80" alt="Thumb 1" class="active-thumb" onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=627&q=80" alt="Thumb 2" onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Thumb 3" onclick="changeImage(this.src)">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-detail">
+                    <div class="product-category">Smart Watches</div>
+                    <h1>Smart Watch X2</h1>
+                    
+                    <div class="product-rating-detail">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.7 (128 reviews)</span>
+                    </div>
+
+                    <div class="product-price-detail">
+                        $299.99
+                        <span class="product-stock">In Stock</span>
+                    </div>
+
+                    <div class="product-description">
+                        <h3>Description</h3>
+                        <p>The Smart Watch X2 represents the pinnacle of wearable technology. With advanced health monitoring, built-in GPS, and a stunning always-on Retina display, it's the ultimate companion for an active lifestyle.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Advanced heart rate and ECG monitoring</li>
+                            <li><i class="fas fa-check"></i> Built-in GPS and compass</li>
+                            <li><i class="fas fa-check"></i> 5-day battery life</li>
+                            <li><i class="fas fa-check"></i> 5ATM water resistance</li>
+                            <li><i class="fas fa-check"></i> Always-on Retina display</li>
+                            <li><i class="fas fa-check"></i> Sleep tracking and recovery insights</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <label for="quantity">Qty:</label>
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="btn-add-cart-detail" data-product="Smart Watch X2" data-price="299.99">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <a href="checkout.html" class="btn-buy-now">
+                            Buy It Now
+                        </a>
+                    </div>
+
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> WT-X2-BLK-001</p>
+                        <p><strong>Categories:</strong> Smart Watches, Fitness Tech</p>
+                        <p><strong>Tags:</strong> GPS, Heart Rate, Waterproof</p>
+                    </div>
+
+                    <div class="product-shipping">
+                        <i class="fas fa-shield-alt"></i> 2 Year Warranty Included
+                        <i class="fas fa-truck"></i> Free Shipping on orders $50+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Specifications Tab -->
+            <div class="product-specs">
+                <div class="specs-header">
+                    <button class="spec-tab active" onclick="showTab('details')">Details</button>
+                    <button class="spec-tab" onclick="showTab('specs')">Specifications</button>
+                    <button class="spec-tab" onclick="showTab('reviews')">Reviews</button>
+                </div>
+                <div class="specs-content active" id="details-tab">
+                    <p>The Smart Watch X2 features a new dual-core processor that delivers up to 20% faster performance while maintaining all-day battery life. The always-on Retina display is 2.5x brighter outdoors when your wrist is down, making it easier to see your watch face in direct sunlight.</p>
+                    <p>Health and fitness features include electrical heart sensor, second-generation optical heart sensor, always-on altimeter, compass, and International SOS calling. watchOS 9 takes advantage of the powerful hardware to deliver advanced workout metrics, sleep stages, and a new Medications app.</p>
+                </div>
+                <div class="specs-content" id="specs-tab">
+                    <table class="specs-table">
+                        <tr>
+                            <td>Display</td>
+                            <td>1.9" Always-On Retina LTPO OLED</td>
+                        </tr>
+                        <tr>
+                            <td>Processor</td>
+                            <td>Dual-core S8 SiP</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>Up to 5 days (18 hours with GPS)</td>
+                        </tr>
+                        <tr>
+                            <td>Water Resistance</td>
+                            <td>5ATM, swimproof</td>
+                        </tr>
+                        <tr>
+                            <td>Connectivity</td>
+                            <td>Bluetooth 5.3, Wi-Fi, LTE optional</td>
+                        </tr>
+                        <tr>
+                            <td>Sensors</td>
+                            <td>ECG, HR, SpO2, accelerometer, gyroscope</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions</td>
+                            <td>45mm x 38mm x 10.7mm</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>38.8g</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="specs-content" id="reviews-tab">
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <span class="big-rating">4.7</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>Based on 128 reviews</span>
+                        </div>
+                    </div>
+                    <div class="review-item">
+                        <strong>John D.</strong>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>Best smartwatch I've ever owned. Battery life is incredible!</p>
+                    </div>
+                    <div class="review-item">
+                        <strong>Sarah M.</strong>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <p>Great for fitness tracking. The GPS is very accurate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UrbanTech</h3>
+                    <p>Premium smart wearables for the modern professional.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="detail.html">Details</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 10 Park Road, Colombo 00500 Sri Lanka</p>
+                    <p><i class="fas fa-phone"></i> 076 xxx xxxx</p>
+                    <p><i class="fas fa-envelope"></i> hansaka@urbantech.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UrbanTech Wear. All rights reserved. Demo Payment Site.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainProductImage').src = src;
+        }
+        
+        function showTab(tabName) {
+            // Hide all tabs
+            document.getElementById('details-tab').classList.remove('active');
+            document.getElementById('specs-tab').classList.remove('active');
+            document.getElementById('reviews-tab').classList.remove('active');
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+            
+            // Update active button
+            let buttons = document.querySelectorAll('.spec-tab');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

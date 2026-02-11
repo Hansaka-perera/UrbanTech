@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanTech Wear | Smart Gear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Urban<span>Tech</span></a>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="detail.html">Details</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="confirmation.html">Confirmation</a></li>
+            </ul>
+            <div class="nav-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Future of Wearable <span>Technology</span></h1>
+                <p>Experience the next generation of smart wearables. Precision engineered for the modern lifestyle.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="detail.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Smart Watch">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Cutting-edge technology meets elegant design</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Smart Watch X2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Watch X2</h3>
+                        <p>Advanced health monitoring, 5-day battery life</p>
+                        <div class="product-price">$299.99</div>
+                        <button class="btn-add-cart" data-product="Smart Watch X2" data-price="299.99">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Wireless Earbuds">
+                    </div>
+                    <div class="product-info">
+                        <h3>AirPulse Pro</h3>
+                        <p>Active noise cancellation, spatial audio</p>
+                        <div class="product-price">$199.99</div>
+                        <button class="btn-add-cart" data-product="AirPulse Pro" data-price="199.99">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge sale">-15%</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Power Bank">
+                    </div>
+                    <div class="product-info">
+                        <h3>SolarPower 20K</h3>
+                        <p>Solar charging, 20,000mAh, wireless output</p>
+                        <div class="product-price">$79.99 <span class="original-price">$94.99</span></div>
+                        <button class="btn-add-cart" data-product="SolarPower 20K" data-price="79.99">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-item">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Free Shipping</h3>
+                <p>On orders over $50</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>2 Year Warranty</h3>
+                <p>Full coverage included</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-undo-alt"></i>
+                <h3>30-Day Returns</h3>
+                <p>Hassle-free returns</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Payment</h3>
+                <p>256-bit encryption</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UrbanTech</h3>
+                    <p>Premium smart wearables for the modern professional. Innovation meets style.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="detail.html">Details</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 10 Park Road, Colombo 00500 Sri Lanka</p>
+                    <p><i class="fas fa-phone"></i> 076 xxx xxxx</p>
+                    <p><i class="fas fa-envelope"></i> hansaka@urbantech.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UrbanTech Wear. All rights reserved. Demo Payment Site.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
