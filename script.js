@@ -135,14 +135,14 @@ function validatePayment(event) {
     const cardNumClean = cardNumber.value.replace(/\s/g, '');
     if (!/^\d{16}$/.test(cardNumClean)) { showError('cardError', 'Card must be 16 digits'); cardNumber.classList.add('error'); isValid = false; }
 
-    if (!/^\d{2}\/\d{2}$/.test(expiryDate.value)) { showError('please check that again', 'Use MM/YY'); expiryDate.classList.add('error'); isValid = false; }
+    if (!/^\d{2}\/\d{2}$/.test(expiryDate.value)) { showError('Please check again', 'Use MM/YY'); expiryDate.classList.add('error'); isValid = false; }
     else {
         const [month, year] = expiryDate.value.split('/').map(Number);
         const now = new Date();
         const currentYear = now.getFullYear() % 100;
         const currentMonth = now.getMonth() + 1;
         if (month < 1 || month > 12 || year < currentYear || (year === currentYear && month < currentMonth)) {
-            showError('expiryError', 'please check that again'); expiryDate.classList.add('error'); isValid = false;
+            showError('expiryError', 'Please check again'); expiryDate.classList.add('error'); isValid = false;
         }
     }
 
