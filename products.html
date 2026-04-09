@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - UrbanTech Wear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>All Products</h1>
+            <p>Discover our collection of premium tech wearables</p>
+        </div>
+    </div>
+
+    <section class="products-page">
+        <div class="container">
+            <div class="product-toolbar">
+                <div class="product-count">6 Products</div>
+                <div class="product-sort">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option>Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid full-grid">
+                <!-- Smart Watch X2 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80" alt="Smart Watch X2">
+                        <div class="product-overlay"><a href="detail.html" class="btn-view">Quick View</a></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Watch X2</h3>
+                        <p>Advanced health monitoring, GPS, 5-day battery</p>
+                        <div class="product-price">$299.99</div>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(128)</span></div>
+                        <button class="btn-add-cart" data-product="Smart Watch X2" data-price="299.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- AirPulse Pro -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80" alt="AirPulse Pro">
+                        <div class="product-overlay"><a href="detail.html" class="btn-view">Quick View</a></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>AirPulse Pro</h3>
+                        <p>Active noise cancellation, spatial audio</p>
+                        <div class="product-price">$199.99</div>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>(256)</span></div>
+                        <button class="btn-add-cart" data-product="AirPulse Pro" data-price="199.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- SolarPower 20K -->
+                <div class="product-card">
+                    <div class="product-badge sale">-15%</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80" alt="SolarPower 20K">
+                        <div class="product-overlay"><a href="detail.html" class="btn-view">Quick View</a></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>SolarPower 20K</h3>
+                        <p>Solar charging, 20,000mAh, wireless output</p>
+                        <div class="product-price">$79.99 <span class="original-price">$94.99</span></div>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>(89)</span></div>
+                        <button class="btn-add-cart" data-product="SolarPower 20K" data-price="79.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- FitBand Elite -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80" alt="Fitness Band">
+                        <div class="product-overlay"><a href="detail.html" class="btn-view">Quick View</a></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>FitBand Elite</h3>
+                        <p>Heart rate, sleep tracking, 7-day battery</p>
+                        <div class="product-price">$89.99</div>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(167)</span></div>
+                        <button class="btn-add-cart" data-product="FitBand Elite" data-price="89.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- ChargeFlow 3-in-1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Wireless Charger">
+                        <div class="product-overlay"><a href="detail.html" class="btn-view">Quick View</a></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>ChargeFlow 3-in-1</h3>
+                        <p>Wireless charging station for all devices</p>
+                        <div class="product-price">$69.99</div>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>(42)</span></div>
+                        <button class="btn-add-cart" data-product="ChargeFlow 3-in-1" data-price="69.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- VisionAR Pro -->
+                <div class="product-card">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1624958292367-5f6f3ad3a225?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Smart Glasses">
+                        <div class="product-overlay"><a href="detail.html" class="btn-view">Quick View</a></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>VisionAR Pro</h3>
+                        <p>Augmented reality glasses, hands-free computing</p>
+                        <div class="product-price">$499.99</div>
+                        <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>(12)</span></div>
+                        <button class="btn-add-cart" data-product="VisionAR Pro" data-price="499.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="load.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

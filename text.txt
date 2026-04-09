@@ -1,0 +1,11 @@
+/urbantech-website/
+│   header.html
+│   footer.html
+│   load.js
+│   style.css
+│   script.js
+│   index.html
+│   products.html
+│   detail.html
+│   checkout.html
+│   confirmation.html
